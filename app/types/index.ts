@@ -1,4 +1,4 @@
-export type SkillDomain = 'code' | 'design' | 'data' | 'communication' | 'critical-thinking' | 'logical-reasoning';
+export type SkillDomain = 'code' | 'design' | 'data-analysis' | 'communication' | 'critical-thinking' | 'logical-reasoning';
 
 export interface Task {
   id: string;

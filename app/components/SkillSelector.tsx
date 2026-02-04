@@ -24,7 +24,7 @@ export default function SkillSelector({ onSelect }: Props) {
       color: 'from-purple-500 to-pink-500'
     },
     {
-      id: 'data' as SkillDomain,
+      id: 'data-analysis' as SkillDomain,
       name: 'Data Analysis',
       icon: BarChart3,
       description: 'Interpret data, find patterns, insights',
@@ -99,33 +99,3 @@ export default function SkillSelector({ onSelect }: Props) {
     </div>
   );
 }
-```
-
----
-
-## 🎯 **HOW IT ALL WORKS NOW:**
-
-### **User Flow:**
-
-1. **User selects domain** (e.g., "Communication")
-2. **System fetches random task** from that domain's pool
-3. **User completes task** (writes email, solves puzzle, etc.)
-4. **AI analyzes** using domain-specific metrics
-5. **Returns score 0-100** with detailed breakdown
-6. **Shows specific improvements** needed
-
-### **Example Flow - Communication Domain:**
-```
-User → Selects "Communication"
-     → Gets task: "Write professional email about project delay"
-     → Writes their email
-     → AI analyzes:
-        - Clarity: 78/100
-        - Structure: 75/100
-        - Tone: 73/100
-        - Persuasiveness: 74/100
-     → Overall: 75/100
-     → Recommendations:
-        ✓ Strengths: "Professional tone, clear points"
-        ✗ Weaknesses: "Could be more concise, weak opening"
-        📚 Learn: "Executive summary writing, Email frameworks"

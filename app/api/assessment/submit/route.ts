@@ -86,12 +86,12 @@ function getAnalysisPrompt(domain: string, taskTitle: string, submission: any): 
   const submissionText = submission.code || submission.text || '';
 
   const prompts: { [key: string]: string } = {
-    code: `Analyze this code submission for: "${taskTitle}"
+    'code': `Analyze this code submission for: "${taskTitle}"
 
 CODE:
-\`\`\`
+\\\`\\\`\\\`
 ${submissionText}
-\`\`\`
+\\\`\\\`\\\`
 
 Evaluate (0-100 each):
 1. Correctness: Does it solve the problem?
@@ -111,7 +111,7 @@ Return JSON:
   }
 }`,
 
-    design: `Analyze this design work for: "${taskTitle}"
+    'design': `Analyze this design work for: "${taskTitle}"
 
 DESIGN DESCRIPTION:
 ${submissionText}
@@ -134,7 +134,7 @@ Return JSON:
   }
 }`,
 
-    data: `Analyze this data analysis for: "${taskTitle}"
+    'data-analysis': `Analyze this data analysis for: "${taskTitle}"
 
 ANALYSIS:
 ${submissionText}
@@ -157,7 +157,7 @@ Return JSON:
   }
 }`,
 
-    communication: `Analyze this communication piece for: "${taskTitle}"
+    'communication': `Analyze this communication piece for: "${taskTitle}"
 
 CONTENT:
 ${submissionText}
@@ -199,7 +199,7 @@ Return JSON:
   "weaknesses": ["Missed potential biases", "Could dig deeper"],
   "recommendations": {
     "immediate": ["Study logical fallacies", "Practice root cause analysis"],
-    "resources": ["Thinking, Fast and Slow", "The Art of Thinking Clearly"]
+  "resources": ["Thinking, Fast and Slow", "The Art of Thinking Clearly"]
   }
 }`,
 

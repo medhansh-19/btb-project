@@ -78,10 +78,10 @@ export const TASK_POOLS: { [key: string]: Task[] } = {
     }
   ],
 
-  data: [
+  'data-analysis': [
     {
       id: 'data-1',
-      domain: 'data',
+      domain: 'data-analysis',
       title: 'Sales Trend Analysis',
       description: 'Analyze sales data and identify trends.',
       difficulty: 'medium',
@@ -91,7 +91,7 @@ export const TASK_POOLS: { [key: string]: Task[] } = {
     },
     {
       id: 'data-2',
-      domain: 'data',
+      domain: 'data-analysis',
       title: 'Customer Churn Analysis',
       description: 'Identify why customers are leaving.',
       difficulty: 'hard',
@@ -101,7 +101,7 @@ export const TASK_POOLS: { [key: string]: Task[] } = {
     },
     {
       id: 'data-3',
-      domain: 'data',
+      domain: 'data-analysis',
       title: 'Survey Data Interpretation',
       description: 'Interpret survey results and draw conclusions.',
       difficulty: 'easy',
